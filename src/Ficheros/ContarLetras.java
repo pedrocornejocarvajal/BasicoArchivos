@@ -1,12 +1,12 @@
 package Ficheros;
 
-public class CharCounter {
+public class ContarLetras {
 
-    private String buscar;
-    private boolean caseSensitive;
+    private final String buscar;
+    private final boolean caseSensitive;
     private int contador;
 
-    public CharCounter(String busqueda, boolean caseSensitive) {
+    public ContarLetras(String busqueda, boolean caseSensitive) {
         this.buscar = busqueda;
         this.caseSensitive = caseSensitive;
     }

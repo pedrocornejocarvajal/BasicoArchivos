@@ -2,15 +2,15 @@ package Ficheros;
 
 import java.io.*;
 
-public class CountingVocals {
+public class ContarVocales {
 
-    private static String FILE_NAME = "input.txt";
-    private static String VOCALS = "aeiou";
+    private static final String NOMBRE_FICHERO = "input.txt";
+    private static final String VOCALES = "aeiou";
 
     public static void run() {
         try {
-            CharCounter counters = new CharCounter(VOCALS, false);
-            FileReader input = new FileReader(FILE_NAME);
+            ContarLetras counters = new ContarLetras(VOCALES, false);
+            FileReader input = new FileReader(NOMBRE_FICHERO);
             int c = input.read();
             while (c != (-1)){
                 counters.countIfTargeted((char) c);

@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class EscribirTextoAlReves {
+public class EscribirInversa {
     private static final String ARCHIVO = "textoatras.txt";
     private static final Scanner scanner = new Scanner(System.in);
     public static void run() {
