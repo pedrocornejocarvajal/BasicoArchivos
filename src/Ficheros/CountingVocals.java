@@ -19,7 +19,7 @@ public class CountingVocals {
             input.close();
             System.out.println(counters);
         } catch (IOException ex) {
-            System.out.println("Something bad has happended :-‐‐(");
+            System.out.println("Error");
         }
     }
 }

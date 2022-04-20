@@ -1,25 +1,25 @@
 package Ficheros;
 
 public class CharCounter2 {
-    private int contadorA=0;
-    private int contadorE=0;
-    private int contadorI=0;
-    private int contadorO=0;
-    private int contadorU=0;
+    private int contadorVocalA =0;
+    private int contadorVocalE =0;
+    private int contadorVocalI =0;
+    private int contadorVocalO =0;
+    private int contadorVocalU =0;
 
     public void countIfTargeted(char c) {
         switch (c){
-            case 'a' ->contadorA++;
-            case 'e' ->contadorE++;
-            case 'i' ->contadorI++;
-            case 'o' ->contadorO++;
-            case 'u' ->contadorU++;
+            case 'a' -> contadorVocalA++;
+            case 'e' -> contadorVocalE++;
+            case 'i' -> contadorVocalI++;
+            case 'o' -> contadorVocalO++;
+            case 'u' -> contadorVocalU++;
         }
     }
 
     @Override
     public String toString() {
-        return String.format("hay %s a, %s e, %s i, %s o, %s u en el texto",
-                contadorA, contadorE, contadorI, contadorO, contadorU);
+        return String.format("Hay %s a, %s e, %s i, %s o, %s u en el texto",
+                contadorVocalA, contadorVocalE, contadorVocalI, contadorVocalO, contadorVocalU);
     }
 }

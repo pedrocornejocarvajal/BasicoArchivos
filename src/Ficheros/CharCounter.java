@@ -2,22 +2,22 @@ package Ficheros;
 
 public class CharCounter {
 
-    private String busqueda;
+    private String buscar;
     private boolean caseSensitive;
     private int contador;
 
     public CharCounter(String busqueda, boolean caseSensitive) {
-        this.busqueda = busqueda;
+        this.buscar = busqueda;
         this.caseSensitive = caseSensitive;
     }
 
     public void countIfTargeted(char c) {
         if (this.caseSensitive) {
-            if (busqueda.toLowerCase().contains(Character.toString(c).toLowerCase())) {
+            if (buscar.toLowerCase().contains(Character.toString(c).toLowerCase())) {
                 contador++;
             }
         } else {
-            if (busqueda.contains(Character.toString(c))) {
+            if (buscar.contains(Character.toString(c))) {
                 contador++;
             }
         }
